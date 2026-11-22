@@ -1,0 +1,30 @@
+{
+  "name": "stillmark",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "File timestamping with QoreX hybrid signatures on QoreChain Diana.",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts",
+    "verify:diana": "node scripts/verify-diana.mjs"
+  },
+  "dependencies": {
+    "@qorechain/qorex-types": "0.1.0",
+    "@qorechain/sdk": "0.14.0",
+    "cosmjs-types": "0.11.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.4.6"
+  }
+}
